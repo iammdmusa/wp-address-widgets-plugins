@@ -1,3 +1,14 @@
+<?php
+/*
+Plugin Name: Easy Address info
+Plugin URI: https://github.com/iammdmusa/wp-address-widgets-plugins
+Description: Address information using widgets aread.
+Author: shuvomsua
+Version: 1.0
+Author URI: http://www.shuvomusa.me
+*/
+
+
 class text_domainmane_address extends WP_Widget {
     // constructor
     function text_domainmane_address() {
