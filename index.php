@@ -1,7 +1,7 @@
-class spaghetti_address extends WP_Widget {
+class text_domainmane_address extends WP_Widget {
     // constructor
-    function spaghetti_address() {
-        parent::WP_Widget(false, $name = __('Spaghetti Address', 'spaghetti_address') );
+    function text_domainmane_address() {
+        parent::WP_Widget(false, $name = __('text_domainmane Address', 'text_domainmane_address') );
     }
 
     // widget form creation
@@ -74,17 +74,17 @@ class spaghetti_address extends WP_Widget {
 
         // Check if text is set
         if( $address ) {
-            echo '<p class="spaghetti_address_txt"><i class="fa fa-map-marker"></i>
+            echo '<p class="text_domainmane_address_txt"><i class="fa fa-map-marker"></i>
 '.$address.'</p>';
         }
         // Check if textarea is set
         if( $phone ) {
-            echo '<p class="spaghetti_address_txt"><i class="fa fa-phone"></i>
+            echo '<p class="text_domainmane_address_txt"><i class="fa fa-phone"></i>
 '.$phone.'</p>';
         }
 
         if( $email ) {
-            echo '<p class="spaghetti_address_txt"><i class="fa fa-envelope"></i>
+            echo '<p class="text_domainmane_address_txt"><i class="fa fa-envelope"></i>
 '.$email.'</p>';
         }
         echo '</div>';
@@ -92,4 +92,4 @@ class spaghetti_address extends WP_Widget {
     }
 }
 // register widget
-add_action('widgets_init', create_function('', 'return register_widget("spaghetti_address");'));
+add_action('widgets_init', create_function('', 'return register_widget("text_domainmane_address");'));
