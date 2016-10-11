@@ -9,6 +9,7 @@ Author URI: http://www.shuvomusa.me
 */
 
 
+
 class text_domainmane_address extends WP_Widget {
     // constructor
     function text_domainmane_address() {
