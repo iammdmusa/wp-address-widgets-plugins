@@ -13,7 +13,9 @@ Author URI: http://www.shuvomusa.me
 class text_domainmane_address extends WP_Widget {
     // constructor
     function text_domainmane_address() {
-        parent::WP_Widget(false, $name = __('text_domainmane Address', 'text_domainmane_address') );
+        //Commentted Due to deprecated after WordPress 4.3
+        //parent::WP_Widget(false, $name = __('text_domainmane Address', 'text_domainmane_address') );
+        parent::__construct(false, $name = __('text_domainmane Address', 'text_domainmane_address') );
     }
 
     // widget form creation
